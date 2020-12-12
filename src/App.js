@@ -36,11 +36,7 @@ class App extends Component {
             {/* className="container mt-3" */}
             <div className="container-expand mt-3">
               <Switch>
-                <Route
-                    exact
-                    path={"/bikes"}
-                    component={BikeList}
-                />
+                <Route exact path="/bikes" component={BikeList}/>
                 <Route exact path="/add" component={AddBike} />
                 <Route path="/bikes/:id" component={Bike} />
               </Switch>
